@@ -11,5 +11,5 @@ A lightweight PowerShell utility to split large text files into fixed‑size, nu
 ## Installation
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/split-logfile.git
+git clone https://github.com/barmenteros/split-logfile.git
 cd split-logfile
