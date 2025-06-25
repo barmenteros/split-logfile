@@ -1,0 +1,17 @@
+name: PowerShell Script Analysis
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analyze:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install PSScriptAnalyzer
+        run: Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+      - name: Run Script Analyzer
+        run: Invoke-ScriptAnalyzer -Path Split-LogFile.ps1 -Recurse
