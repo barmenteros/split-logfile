@@ -1,2 +1,15 @@
 # split-logfile
-This repository contains a PowerShell script to split large text files into numbered chunks, following best practices for public open‑source projects.
+
+A lightweight PowerShell utility to split large text files into fixed‑size, numbered chunks.
+
+## Features
+- Streams input to minimize memory usage
+- Configurable lines per chunk
+- Output folder and file names derived from source file name
+- Zero dependencies beyond PowerShell 5+
+
+## Installation
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/split-logfile.git
+cd split-logfile
