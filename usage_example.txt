@@ -1,0 +1,3 @@
+.\Split-LogFile.ps1 `
+  -InputFilePath 'C:\Users\barme\OneDrive\Downloads\20250916.log.txt' `
+  -LinesPerChunk 10000
